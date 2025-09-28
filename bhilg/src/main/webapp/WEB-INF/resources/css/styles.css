@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+/* Overlay gradient */
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.logo-icon {
+    background: #b3ff00;
+    color: #111;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #b3ff00;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #b3ff00;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    max-width: 800px;
+    margin: 200px 60px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin: 20px 0;
+    font-size: 18px;
+    max-width: 500px;
+    color: #ddd;
+}
+
+.cta-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #b3ff00;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #b3ff00;
+    color: #111;
+}
