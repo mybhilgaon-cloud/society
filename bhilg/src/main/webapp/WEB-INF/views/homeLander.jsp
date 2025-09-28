@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
+    <title>People Of Bhilgaon</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -32,20 +32,19 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">People Of <span>Bhilgaon</span></a>
+	      <a class="navbar-brand" href="/home">People Of <span>Bhilgaon</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="/home" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="/home" class="nav-link">Register</a></li>
+	          <li class="nav-item"><a href="/home" class="nav-link">Login</a></li>
+	          <li class="nav-item"><a href="/home" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="/home" class="nav-link">Events</a></li>
+	          <li class="nav-item"><a href="/home" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -74,7 +73,7 @@
       </div>
     </div>
 
-     <section class="ftco-section ftco-no-pt bg-light">
+     <!-- <section class="ftco-section ftco-no-pt bg-light">
     	<div class="container">
     		<div class="row no-gutters">
     			<div class="col-md-12	featured-top">
@@ -144,7 +143,7 @@
 	  				</div>
 				</div>
   		</div>
-    </section>
+    </section> -->
 
 
     <section class="ftco-section ftco-no-pt bg-light">

@@ -16,4 +16,14 @@ public class HomeController {
         mv.setViewName("homeLander");
         return mv;
     }
+    
+    @GetMapping("/")
+    public ModelAndView getHome() {
+    	
+    	ModelAndView mv= new ModelAndView();
+        mv.addObject("companyName", "TechTrend Innovations");
+        mv.addObject("tagline", "Building the Future, One Solution at a Time");
+        mv.setViewName("homeLander");
+        return mv;
+    }
 }
