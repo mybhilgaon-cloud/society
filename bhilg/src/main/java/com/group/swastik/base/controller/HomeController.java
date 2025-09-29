@@ -22,4 +22,12 @@ public class HomeController {
         mv.setViewName("Nh");
         return mv;
     }
+    
+    @GetMapping("/event")
+    public ModelAndView event() {
+    	
+    	ModelAndView mv= new ModelAndView();
+        mv.setViewName("Event");
+        return mv;
+    }
 }
