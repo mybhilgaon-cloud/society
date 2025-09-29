@@ -11,9 +11,7 @@ public class HomeController {
     public ModelAndView home() {
     	
     	ModelAndView mv= new ModelAndView();
-        mv.addObject("companyName", "TechTrend Innovations");
-        mv.addObject("tagline", "Building the Future, One Solution at a Time");
-        mv.setViewName("homeLander");
+        mv.setViewName("Nh");
         return mv;
     }
     
@@ -21,9 +19,7 @@ public class HomeController {
     public ModelAndView getHome() {
     	
     	ModelAndView mv= new ModelAndView();
-        mv.addObject("companyName", "TechTrend Innovations");
-        mv.addObject("tagline", "Building the Future, One Solution at a Time");
-        mv.setViewName("homeLander");
+        mv.setViewName("Nh");
         return mv;
     }
 }
