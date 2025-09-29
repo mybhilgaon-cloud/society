@@ -24,7 +24,7 @@ public class HomeController {
     }
     
     @GetMapping("/event")
-    public ModelAndView event() {
+     public ModelAndView event() {
     	
     	ModelAndView mv= new ModelAndView();
         mv.setViewName("Event");

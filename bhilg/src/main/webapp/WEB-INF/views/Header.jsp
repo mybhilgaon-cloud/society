@@ -10,7 +10,7 @@
       z-index: 999;
   }
   .ftco_navbar .nav-link { color: #fff !important; }
-  .ftco_navbar .navbar-brand span { color: #f8f9fa !important; }
+   .ftco_navbar .navbar-brand span { color: #f8f9fa !important; }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar" id="ftco-navbar">
