@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "shoperonlineindia",
+  "private_key_id": "0c570e3b44eb7084555c876bf67f55719087cd54",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCO18rdsv52dgqU\n6K3PdGob10WkbZ52RpOw9Pdgted2tP/GyvppoLKnCQyC1Ar8xfJoxxC0A1mivlNx\nkJDtirFOMhCer4pRT5RC14frUApyaiuayq0GpiY7cZItfO+dpw6FJA7N2YFdVCdS\nv0zem9gMHddY4EgW8ygYWtVAtrD7OwTp+r4TZmHyavPbZTiAZL/CvZ/kSWJDdoph\nxCXro9VeBdW1TjqSCaoEv9XwVvtT84ZWehO6Rkty+ERkCl3YY3oKF96bLB2uWBsz\nvaKz1b5I1M+eK/agVG8+g8mNi3OYbfXyy0hgMiQjKA+Vk75aoLVX+8vt08hXHxT0\nPKOTwbW9AgMBAAECggEAAQ9lvtkVPZiirqtx0f6+ZHaBWp11qTfc4MAj4q128Ldn\nLpKGSUJoEQiAKN7QaUMO1lHXGrIe3pZX1P/w4Djafm1HGLM005jdNAgyRtmeBwgp\nF30DMiMJjAD++yQ/CWyAyK9iOYtKHbQCME47KjiXe3+KAAVDtufj5Eph5GXdHZnP\nsbMZD/mXoYkUEcHRSv42N6JlT8hs/Ggso5tCq3kFS7DdV5ylKSrNfwcK76ZfDYDL\nZV11Wwg+7FUBL6X/ylOcvC7yIS+YY4JCrzh2VMw6z4a8Olh9TvvkD8OjYkBrIjgw\nQ9dCezDMFVajHe9By6zcfmXLh6ma2Y/K8FNkkSIwAQKBgQDIMSrk1xIYqitf8n7u\nvpx6e4Cj86qbQ7hpoEsaHXRiKTWJDBf1dv188eY+5ypwy5qB+byLDhrgECjPrNG6\nDok+Sn5ckVwXZTB/pFEm/IX+WisE577BF8/QZKaCOrIh9CNFi9fwkjhbOKeY9qmx\nW/CMq2126LTDDx013EXgerEXCQKBgQC2qd5lF5BIema7rjjksuKUukiyX0jmI8N4\n3v/ZGo8LrITO7760kqVM89RYkOgr3KN9wIBP/kYuB3reDmMKWpaERuzsEwKQcQYI\nQSLTDYrnN/RykJNJLcgR+t1OVDdTnyy/9zNiTe84NosryyN0tvlVRkx5uf9h7jIH\nc8oU7RbCFQKBgBJ7z60PWoFifNzABA5BFSuN6aO5pL/vMcC25xhDLfK+QU4lCrVE\nRkVaBFs8dsOxWNO1Xj4skDit5Ua/eyHFo9BXinE7jpguZJr0bfW+jRSd+KjcSNWF\nQE/Ka0FM8BOIehU6wzZYGdH6WicaZzKT/ZLPZSz8cWwtIhJOAzmlumIZAoGATZ4Q\n6lQA80tPrCBz/Hom3ZvqmCD1ERXRUeMwREiM0CEWrfghyQknRHO3n4qznS+8KQtL\nerJJj/WNuB3U5+lmW/7nXckWJdpg/dDvw07V3zpfnO7iJw5VHY7Dyyzt9ZKFqWyZ\nYQRMyk4jBRDkmAvIFvwwMuleI3bbu17wV8QHD6ECgYB4PforQO3HFiapVj48iVHy\nyZ9GvZHVBfpRBh/yzrN/tSlMEsix6EDPK8dSBB8TEVqIakNOUDLGe0iTpMVKGqYm\nZY5ZLMCtB7yjP9kvtekhghw6rTgLLEZAi9DcXbQV5TRfaCIhvpjOuRDD6pyW8zh8\ndj20xQfJToWuF0g0z1oHcw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gc-soi-uploader@shoperonlineindia.iam.gserviceaccount.com",
+  "client_id": "101308432218616163001",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gc-soi-uploader%40shoperonlineindia.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
