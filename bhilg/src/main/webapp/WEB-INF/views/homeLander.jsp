@@ -125,7 +125,7 @@
   <script src="/resource/SocietyHome/js/jquery.waypoints.min.js"></script>
   <script src="/resource/SocietyHome/js/jquery.stellar.min.js"></script>
   <script src="/resource/SocietyHome/js/owl.carousel.min.js"></script>
-  <script src="/resource/SocietyHome/js/jquery.magnific-popup.min.js"></script>
+  <script src="/resource/SocietyHome/js/jquery.magnific-popup.min.js">   </script>
   <script src="/resource/SocietyHome/js/aos.js"></script>
   <script src="/resource/SocietyHome/js/jquery.animateNumber.min.js"></script>
   <script src="/resource/SocietyHome/js/bootstrap-datepicker.js"></script>
