@@ -265,7 +265,7 @@
     <div class="branding py-3">
       <div class="container d-flex align-items-center justify-content-between">
         <a href="/home" class="logo text-decoration-none">
-          <h1 class="sitename fs-3 mb-0" data-i18n="siteName">Yoga Sangam 2026</h1>
+          <h1 class="sitename fs-3 mb-0" data-i18n="siteName">People of Bhilgaon</h1>
         </a>
 
       <nav class="navbar navbar-expand-lg navbar-light p-0">
@@ -294,13 +294,13 @@
                 <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
             </li>
 
-            <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+          <!--   <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
                 <a href="/register"
                    class="btn btn-brand"
                    data-i18n="ctaRegister">
                     Join Yoga Sangam
                 </a>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>
@@ -314,8 +314,8 @@
   <section id="hero" class="hero-wrap">
     <div class="hero-card text-center" data-aos="fade-up">
       <div class="eyebrow mb-3" data-i18n="eyebrow">21 June 2026 • Bhilgaon</div>
-      <h1 class="display-4 fw-bold mb-3" data-i18n="headline">International Yoga Day 2026</h1>
-      <h2 class="fs-2 text-primary mb-4" data-i18n="subHeadline">Yoga Sangam – One Earth • One Health • One Yoga</h2>
+      <h1 class="display-4 fw-bold mb-3" data-i18n="headline">Yoga Sangam 2026</h1>
+      <h2 class="fs-2 text-primary mb-4" data-i18n="subHeadline">One Earth • One Health • One Yoga</h2>
       <p class="lead mb-4" data-i18n="heroDesc">Join the global celebration of yoga for physical vitality, mental peace, and spiritual harmony.</p>
       <a href="/register" class="btn btn-brand btn-lg" data-i18n="btnJoin">Register for Yoga Sangam</a>
     </div>
@@ -326,7 +326,7 @@
     <div class="container">
       <div class="row align-items-center gy-5">
          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="50">
-            <img src="/resource/SocietyHome/images/p3.jpg" class="img-fluid rounded-4 border" alt="Community" />
+            <img src="/resource/SocietyHome/images/p3.JPG" class="img-fluid rounded-4 border" alt="Community" />
           </div>
         <div class="col-lg-6" data-aos="fade-left">
           <div class="eyebrow mb-3" data-i18n="aboutEyebrow">Global Movement</div>

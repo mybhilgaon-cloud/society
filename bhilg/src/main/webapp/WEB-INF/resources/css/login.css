@@ -21,8 +21,8 @@ body{
     position: relative;
     width: 750px;
     height: 450px;
-    border: 2px solid #ff2770;
-    box-shadow: 0 0 25px #ff2770;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 0 25px rgba(13,110,253,.55);
     overflow: hidden;
 }
 
@@ -55,7 +55,6 @@ body{
 }
 
 .form-box.Register{
-    /* display: none; */
     right: 0;
     padding: 0 60px;
 }
@@ -103,7 +102,7 @@ body{
 
 .input-box input:focus,
 .input-box input:valid{
-    border-bottom: 2px solid #ff2770;
+    border-bottom: 2px solid #0d6efd;
 }
 
 .input-box label{
@@ -119,7 +118,7 @@ body{
 .input-box input:focus ~ label,
 .input-box input:valid ~ label{
     top: -5px;
-    color: #ff2770;
+    color: #0d6efd;
 }
 
 .input-box box-icon{
@@ -133,7 +132,7 @@ body{
 
 .input-box input:focus ~ box-icon,
 .input-box input:valid ~ box-icon{
-    color: #ff2770;
+    color: #0d6efd;
 }
 
 .btn{
@@ -145,9 +144,9 @@ body{
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    border: 2px solid #ff2770;
+    border: 2px solid #0d6efd;
     overflow: hidden;
-    z-index: 1;    
+    z-index: 1;
 }
 
 .btn::before{
@@ -155,7 +154,12 @@ body{
     position: absolute;
     height: 300%;
     width: 100%;
-    background: linear-gradient(#25252b, #ff2770, #25252b, #ff2770);
+    background: linear-gradient(
+        #25252b,
+        #0d6efd,
+        #25252b,
+        #0d6efd
+    );
     top: -100%;
     left: 0;
     z-index: -1;
@@ -174,7 +178,7 @@ body{
 
 .regi-link a{
     text-decoration: none;
-    color: #ff2770;
+    color: #0d6efd;
     font-weight: 600;
 }
 
@@ -214,7 +218,6 @@ body{
 }
 
 .info-content.Register{
-    /* display: none; */
     left: 0;
     text-align: left;
     padding: 0 150px 60px 38px;
@@ -225,7 +228,7 @@ body{
     transform: translateX(-120%);
     transition: .7s ease;
     opacity: 0;
-    filter: blur(10PX);
+    filter: blur(10px);
     transition-delay: calc(.1s * var(--S));
 }
 
@@ -252,8 +255,11 @@ body{
     top: -5px;
     height: 600px;
     width: 850px;
-    background: linear-gradient(45deg, #25252b, #ff2770);
-    /*transform: rotate(10deg) skewY(40deg);*/
+    background: linear-gradient(
+        45deg,
+        #25252b,
+        #0d6efd
+    );
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
     transition: 1.5s ease;
@@ -272,7 +278,7 @@ body{
     height: 700px;
     width: 850px;
     background: #25252b;
-    border-top: 3px solid #ff2770;
+    border-top: 3px solid #0d6efd;
     transform: rotate(0deg) skewY(0deg);
     transform-origin: bottom left;
     transition: 1.5s ease;

@@ -294,13 +294,13 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  color: #d91a1a;
+  color: #1980cc;
 }
 
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
-  background: #cc3b19;
+  background:  #1980cc;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;

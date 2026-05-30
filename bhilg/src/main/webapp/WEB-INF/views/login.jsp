@@ -71,7 +71,7 @@
     .login-box h3 {
       text-align: center;
       margin-bottom: 20px;
-      color: #871F35;
+      color: #056bc5;
       font-weight: 600;
     }
     .form-control {
@@ -79,7 +79,7 @@
       padding: 10px 12px;
     }
     .btn-login {
-      background: #871F35;
+      background: #056bc5;
       color: #fff;
       width: 100%;
       padding: 10px;
@@ -87,9 +87,10 @@
       border: none;
       transition: 0.3s;
     }
-    .btn-login:hover { background: #5e1525; }
+    .btn-login:hover { background: #056bc5
+; }
     .login-footer { text-align: center; margin-top: 14px; font-size: 14px; }
-    .login-footer a { color: #871F35; text-decoration: none; }
+    .login-footer a { color: #056bc5; text-decoration: none; }
     .login-footer a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -135,7 +136,6 @@
 
         <a class="cta-btn d-none d-sm-block" href="/event">Upcoming Events</a>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Upcoming Events</a>
       </div>
     </div>
   </header>

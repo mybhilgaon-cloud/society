@@ -51,12 +51,12 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.08);
       width: 100%; max-width: 460px; padding: 30px;
     }
-    .register-box h3 { text-align: center; margin-bottom: 20px; color: #871F35; font-weight: 600; }
+    .register-box h3 { text-align: center; margin-bottom: 20px; color: #056bc5; font-weight: 600; }
     .form-control { border-radius: 6px; padding: 10px 12px; }
-    .btn-register { background: #871F35; color: #fff; width: 100%; padding: 10px; border-radius: 6px; border: none; transition: .3s; }
+    .btn-register { background: #056bc5; color: #fff; width: 100%; padding: 10px; border-radius: 6px; border: none; transition: .3s; }
     .btn-register:hover { background: #5e1525; }
     .register-footer { text-align: center; margin-top: 15px; font-size: 14px; }
-    .register-footer a { color: #871F35; text-decoration: none; }
+    .register-footer a { color: #056bc5; text-decoration: none; }
     .register-footer a:hover { text-decoration: underline; }
     .field-error { color: #dc3545; font-size: 0.9rem; margin-top: 6px; }
 
@@ -74,7 +74,7 @@
       border-radius: 4px;
     }
     @media (max-width: 767px) {
-      .topbar { background: #871F35; } /* Darker topbar for mobile */
+      .topbar { background: #056bc5; } /* Darker topbar for mobile */
       .lang-select { color: #fff; background: #5e1525; border: none; } /* White text on dark background */
     }
     /* Ensure header text is visible */
