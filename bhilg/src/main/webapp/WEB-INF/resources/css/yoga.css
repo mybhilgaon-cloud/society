@@ -1,0 +1,38 @@
+
+:root{
+--brand:#1565C0;
+--brand-dark:#0D47A1;
+--brand-light:#42A5F5;
+}
+
+body{background:#f5faff;font-family:Inter,sans-serif;}
+.site-title{font-weight:800;color:var(--brand-dark);}
+.hero-wrap{
+min-height:90vh;
+display:flex;
+align-items:center;
+background:linear-gradient(rgba(21,101,192,.85),rgba(13,71,161,.85)),url('/resource/SocietyHome/images/ok.png');
+background-size:cover;
+}
+.hero-card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(16px);
+padding:60px;
+border-radius:30px;
+color:#fff;
+}
+.hero-card h1{font-size:4rem;font-weight:800;}
+.section-pad{padding:90px 0;}
+.benefit-card{
+background:#fff;
+padding:30px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.lang-card{
+background:#fff;
+padding:30px;
+border-radius:24px;
+margin-bottom:20px;
+}
