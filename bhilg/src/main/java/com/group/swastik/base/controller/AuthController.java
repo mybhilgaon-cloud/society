@@ -1,7 +1,10 @@
 package com.group.swastik.base.controller;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,8 +15,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.group.swastik.base.dto.RegisterForm;
+import com.group.swastik.base.entities.User;
+import com.group.swastik.base.services.UserService;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
 @Controller
@@ -21,7 +31,8 @@ public class AuthController {
 
     private static final Logger log = LoggerFactory.getLogger(AuthController.class);
 
-   // private final UserService userService;
+    @Autowired
+    private  UserService userService;
 
 	/*
 	 * public AuthController(UserService userService) { this.userService =
@@ -48,7 +59,7 @@ public class AuthController {
         }
 
         try {
-           // userService.register(form);
+            userService.register(form);
         } catch (IllegalArgumentException ex) {
             // duplicate email/mobile
             bindingResult.reject("registration.error", ex.getMessage());
@@ -92,6 +103,54 @@ public class AuthController {
       //  return "redirect:/login?error=Invalid%20email%20or%20password&email=" + e;
     }
 
+    @GetMapping("/reports/users")
+    public String userReport(Model model) {
+
+        List<User> users = userService.getAllUsers();
+
+        model.addAttribute("users", users);
+
+        return "UserReport";
+    }
+    
+    
+    @GetMapping("/reports/users/pdf")
+    public void downloadPdf(HttpServletResponse response) throws Exception {
+
+        List<User> users = userService.getAllUsers();
+
+        response.setContentType("application/pdf");
+        response.setHeader(
+                "Content-Disposition",
+                "attachment; filename=users-report.pdf");
+
+        Document document = new Document();
+
+        PdfWriter.getInstance(
+                document,
+                response.getOutputStream());
+
+        document.open();
+
+        document.add(new Paragraph("Registered Users Report"));
+
+        PdfPTable table = new PdfPTable(3);
+
+        table.addCell("Full Name");
+        table.addCell("Email");
+        table.addCell("Mobile");
+
+        for (User user : users) {
+
+            table.addCell(user.getFullname());
+            table.addCell(user.getEmail());
+            table.addCell(user.getMobile());
+        }
+
+        document.add(table);
+
+        document.close();
+    }
     // Optional logout
     @PostMapping("/logout")
     public String logout(HttpServletRequest request, RedirectAttributes ra) {

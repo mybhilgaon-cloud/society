@@ -30,10 +30,10 @@
     </dependency>
 
     <!-- JPA / Hibernate (jakarta.persistence.*) -->
- <!--   <dependency>
+   <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>-->
+    </dependency>
 
     <!-- Bean Validation (jakarta.validation.*) for form DTO/entity constraints -->
     <dependency>
@@ -42,11 +42,11 @@
     </dependency>
 
     <!-- Database driver: PostgreSQL -->
-<!--    <dependency>
+   <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
-    </dependency>-->
+    </dependency>
 
     <!-- JSP support (Jasper compiler) -->
     <dependency>
@@ -68,6 +68,13 @@
       <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
       <version>3.0.0</version>
     </dependency>
+    
+    <!--pdf-->
+    <dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13.3</version>
+</dependency>
 
     <!-- JSTL implementation (Glassfish) -->
     <dependency>
