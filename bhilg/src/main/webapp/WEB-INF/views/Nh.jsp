@@ -65,7 +65,7 @@
     box-shadow: 0 15px 40px rgba(0,0,0,0.18);
 
     padding: 25px 20px;      /* reduced from 45px 35px */
-    max-width: 550px;        /* reduced from 1100px */
+    max-width: 400px;        /* reduced from 1100px */
     width: 85%;
     margin: auto;
 
@@ -424,7 +424,7 @@
   <script>
     const I18N = {
       en: {
-        siteName: "Yoga Sangam 2026",
+        siteName: "People Of Bhilgaon",
         siteNameFooter: "Yoga Sangam 2026 - Bhilgaon",
         langLabel: "Language",
         navHome: "Home",

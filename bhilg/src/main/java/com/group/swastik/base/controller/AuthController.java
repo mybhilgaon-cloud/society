@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.group.swastik.base.dto.RegisterForm;
@@ -49,31 +50,60 @@ public class AuthController {
 
     // Handle Register POST
     @PostMapping("/register")
-    public String doRegister(@Valid @ModelAttribute("registerForm") RegisterForm form,
-                             BindingResult bindingResult,
-                             RedirectAttributes ra) {
+    public ModelAndView doRegister(
+            @Valid @ModelAttribute("registerForm") RegisterForm form,
+            BindingResult bindingResult,
+            RedirectAttributes ra) {
 
+        ModelAndView mv = new ModelAndView();
+
+        // Validation errors
         if (bindingResult.hasErrors()) {
-            // forward back to JSP with validation errors
-            return "Register";
+            mv.setViewName("Register");
+            return mv;
         }
 
         try {
+
             userService.register(form);
+
+            // Success message
+            mv.addObject(
+                    "success",
+                    "Registration completed successfully.");
+
+            // Clear form after successful registration
+            mv.addObject(
+                    "registerForm",
+                    new RegisterForm());
+
+            mv.setViewName("Register");
+
+            return mv;
+
         } catch (IllegalArgumentException ex) {
-            // duplicate email/mobile
-            bindingResult.reject("registration.error", ex.getMessage());
-            return "Register";
+
+            bindingResult.reject(
+                    "registration.error",
+                    ex.getMessage());
+
+            mv.setViewName("Register");
+
+            return mv;
+
         } catch (Exception ex) {
+
             log.error("Registration failed", ex);
-            bindingResult.reject("registration.error", "Something went wrong. Please try again.");
-            return "Register";
+
+            bindingResult.reject(
+                    "registration.error",
+                    "Something went wrong. Please try again.");
+
+            mv.setViewName("Register");
+
+            return mv;
         }
-
-        ra.addFlashAttribute("msg", "Registration successful. Please login.");
-        return "redirect:/login";
     }
-
     // Show Login JSP
     @GetMapping("/login")
     public String showLogin() {

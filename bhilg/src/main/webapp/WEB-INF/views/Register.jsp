@@ -134,24 +134,53 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="/event" data-i18n="navUpcoming">Upcoming Events</a>
+        <a class="cta-btn d-none d-sm-block" href="/home" data-i18n="navUpcoming">Upcoming Events</a>
       </div>
     </div>
   </header>
 
   <!-- ===== Main (Centered Register Form) ===== -->
   <main class="site-main">
-    <div class="register-box" data-aos="fade-up">
-      <h3 data-i18n="registerTitle">Register For Participation</h3>
+  <div class="register-box" data-aos="fade-up">
 
-      <!-- Flash messages via query params -->
-      <c:if test="${not empty param.error}">
-        <div class="alert alert-danger py-2 mb-3"><c:out value="${param.error}"/></div>
-      </c:if>
-      <c:if test="${not empty param.msg}">
-        <div class="alert alert-success py-2 mb-3"><c:out value="${param.msg}"/></div>
-      </c:if>
+    <h3 data-i18n="registerTitle">
+      Register For Participation
+    </h3>
 
+    <!-- Success Message -->
+    <c:if test="${not empty success}">
+      <div class="alert alert-success alert-dismissible fade show mb-3"
+           role="alert">
+
+        <i class="bi bi-check-circle-fill"></i>
+        ${success}
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="alert">
+        </button>
+
+      </div>
+    </c:if>
+
+    <!-- Registration Error -->
+    <form:errors cssClass="alert alert-danger d-block mb-3"/>
+
+    <!-- Existing Query Param Messages -->
+    <c:if test="${not empty param.error}">
+      <div class="alert alert-danger py-2 mb-3">
+        <c:out value="${param.error}"/>
+      </div>
+    </c:if>
+
+    <c:if test="${not empty param.msg}">
+      <div class="alert alert-success py-2 mb-3">
+        <c:out value="${param.msg}"/>
+      </div>
+    </c:if>
+
+  
+ <c:if test="${ empty success}">
       <!-- Spring Form -->
       <form:form action="${pageContext.request.contextPath}/register" method="post" modelAttribute="registerForm">
         <div class="mb-3">
@@ -180,10 +209,12 @@
 
         <button type="submit" class="btn-register" data-i18n="formSubmit">Register</button>
       </form:form>
-
+      </c:if>
+<c:if test="${ empty success}">
       <div class="register-footer">
         <p data-i18n="formAlreadyAccount">Already have an account? <a href="${pageContext.request.contextPath}/login" data-i18n="formLoginLink">Login</a></p>
       </div>
+      </c:if>
     </div>
   </main>
 
