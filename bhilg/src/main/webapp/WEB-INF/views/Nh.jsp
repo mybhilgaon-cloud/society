@@ -313,7 +313,7 @@
   <!-- Hero -->
   <section id="hero" class="hero-wrap">
     <div class="hero-card text-center" data-aos="fade-up">
-      <div class="eyebrow mb-3" data-i18n="eyebrow">21 June 2026 • Bhilgaon</div>
+      <div class="eyebrow mb-3" data-i18n="eyebrow">21 June 2026 • Bhilgaon - Makde Celebrations</div>
       <h1 class="display-4 fw-bold mb-3" data-i18n="headline">Yoga Sangam 2026</h1>
       <h2 class="fs-2 text-primary mb-4" data-i18n="subHeadline">One Earth • One Health • One Yoga</h2>
       <p class="lead mb-4" data-i18n="heroDesc">Join the global celebration of yoga for physical vitality, mental peace, and spiritual harmony.</p>
@@ -432,7 +432,7 @@
         navPhotos: "Photos",
         navContact: "Contact",
         ctaRegister: "Join Yoga Sangam",
-        eyebrow: "21 June 2026 • Bhilgaon",
+        eyebrow: "21 June 2026 • Bhilgaon-Makde Celebrations",
         headline: "International Yoga Day 2026",
         subHeadline: "Yoga Sangam – One Earth • One Health • One Yoga",
         heroDesc: "Join the global celebration of yoga for physical vitality, mental peace, and spiritual harmony.",
@@ -450,7 +450,7 @@
       },
       hi: {
         siteName: "योग संगम 2026",
-        siteNameFooter: "योग संगम 2026 - भिलगांव",
+        siteNameFooter: "योग संगम 2026 - भिलगांव - मकड़े सेलिब्रेशन्स",
         langLabel: "भाषा",
         navHome: "होम",
         navRegister: "रजिस्टर",
@@ -475,7 +475,7 @@
       },
       mr: {
         siteName: "योग संगम 2026",
-        siteNameFooter: "योग संगम 2026 - भिलगाव",
+        siteNameFooter: "योग संगम 2026 - भिलगाव - मकड़े सेलिब्रेशन्स",
         langLabel: "भाषा",
         navHome: "मुख्यपृष्ठ",
         navRegister: "नोंदणी",
