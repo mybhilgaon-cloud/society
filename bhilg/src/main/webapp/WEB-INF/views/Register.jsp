@@ -79,7 +79,7 @@
     }
     /* Ensure header text is visible */
     .branding .logo h1, .navmenu a, .cta-btn {
-      color: #0f1115 !important; /* Dark text for header */
+      color: #1f58cb !important; /* Dark text for header */
     }
     @media (max-width: 767px) {
       .branding .logo h1, .navmenu a, .cta-btn {

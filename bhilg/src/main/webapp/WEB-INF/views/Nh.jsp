@@ -440,7 +440,7 @@
         aboutEyebrow: "Global Movement",
         aboutTitle: "Yoga for Wellness, Wisdom & World Peace",
         aboutBody: "Proposed by Prime Minister Narendra Modi at the United Nations in 2014 and unanimously adopted by 177 countries, International Yoga Day is celebrated every year on 21st June across the world.",
-        aboutBody2: "In 2026, Bhilgaon proudly hosts Yoga Sangam — a beautiful community gathering to experience the ancient science of yoga for holistic well-being.",
+        aboutBody2: "In 2026, Bhilgaon proudly hosts Yoga Sangam — a beautiful community gathering to experience the ancient science of yoga for holistic well-being. Organised by - Bhilgaon Yoga Group, Assisted by - Khojendra Makde, Sanjeet kr. sunny. ",
         galleryEyebrow: "Gallery",
         galleryTitle: "Moments from Yoga Sangam",
         galleryToggle: "View Photos",
