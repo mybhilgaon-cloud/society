@@ -444,7 +444,7 @@
         galleryEyebrow: "Gallery",
         galleryTitle: "Moments from Yoga Sangam",
         galleryToggle: "View Photos",
-        contactTitle: "Ready to Join the Movement?",
+        contactTitle: "Ready to Join the Movement?",  
         contactBody: "Register now and be part of this grand celebration of health and harmony at Bhilgaon",
         contactBtn: "Register Free Now"
       },

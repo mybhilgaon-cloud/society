@@ -194,7 +194,7 @@
           <form:input path="mobile" id="mobile" cssClass="form-control" data-i18n-placeholder="formMobilePlaceholder" placeholder="Enter your mobile number" maxlength="10" pattern="[0-9]{10}" required="required"/>
           <form:errors path="mobile" cssClass="field-error"/>
         </div>
-
+  
         <div class="mb-3">
           <label for="email" class="form-label" data-i18n="formEmail">Email address</label>
           <form:input path="email" id="email" type="email" cssClass="form-control" data-i18n-placeholder="formEmailPlaceholder" placeholder="Enter your email" required="required"/>
