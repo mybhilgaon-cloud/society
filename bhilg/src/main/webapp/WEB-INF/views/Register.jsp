@@ -83,7 +83,7 @@
     }
     @media (max-width: 767px) {
       .branding .logo h1, .navmenu a, .cta-btn {
-        color: #fff !important; /* White text for mobile */
+        color: #0d418d !important; /* White text for mobile */
       }
     }
   </style>
