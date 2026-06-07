@@ -371,7 +371,7 @@
   <!-- Footer -->
   <footer class="footer py-5 bg-white border-top">
     <div class="container text-center">
-      <p class="mb-1">© 2026 <strong class="sitename" data-i18n="siteNameFooter">Yoga Sangam - Bhilgaon</strong></p>
+      <p class="mb-1"> <strong class="sitename" data-i18n="">  © 2026 <a href="https://www.swastikgo.com">Swastikgo.</a> All Rights Reserved.</strong></p>
     </div>
   </footer>
 
