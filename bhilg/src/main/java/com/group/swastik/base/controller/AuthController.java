@@ -56,7 +56,7 @@ public class AuthController {
             RedirectAttributes ra) {
 
         ModelAndView mv = new ModelAndView();
-
+        log.info("REGISTER POST HIT");
         // Validation errors
         if (bindingResult.hasErrors()) {
             mv.setViewName("Register");

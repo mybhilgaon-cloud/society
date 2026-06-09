@@ -59,9 +59,7 @@ public class UserServiceImpl implements UserService {
 
 	@Transactional
 	public User register(RegisterForm form) {
-		if (emailTaken(form.getEmail())) {
-			throw new IllegalArgumentException("Email already registered");
-		}
+		
 		if (mobileTaken(form.getMobile())) {
 			throw new IllegalArgumentException("Mobile already registered");
 		}

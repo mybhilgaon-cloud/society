@@ -18,9 +18,9 @@ import jakarta.persistence.UniqueConstraint;
 
 @Entity
 
-@Table(name = "users", uniqueConstraints = {
+@Table(name = "users1", uniqueConstraints = {
 
-		@UniqueConstraint(columnNames = "email"),
+		
 
 		@UniqueConstraint(columnNames = "mobile") })
 public class User {
@@ -40,10 +40,10 @@ public class User {
 	@Column(name = "mobile", nullable = false, length = 15)
 	private String mobile;
 
-	@Column(name = "email", nullable = false, length = 120)
+	@Column(name = "email", nullable = true, length = 120)
 	private String email;
 
-	@Column(name = "password", nullable = false, length = 255)
+	@Column(name = "password", nullable = true, length = 255)
 	private String password;
 
 	@Column(name = "created_at", nullable = false)
@@ -78,7 +78,17 @@ public class User {
 	}
 
 	// Getters and setters 
-	public Long getId() { return id; }
+	
+
+	@Override
+	public String toString() {
+		return "User{" + "id=" + id + ", fullname='" + fullname + '\'' + ", mobile='" + mobile + '\'' + ", email='"
+				+ email + '\'' + ", createdAt=" + createdAt + '}';
+	}
+
+	public Long getId() {
+		return id;
+	}
 
 	public void setId(Long id) {
 		this.id = id;
@@ -132,9 +142,7 @@ public class User {
 		this.updatedAt = updatedAt;
 	}
 
-	@Override
-	public String toString() {
-		return "User{" + "id=" + id + ", fullname='" + fullname + '\'' + ", mobile='" + mobile + '\'' + ", email='"
-				+ email + '\'' + ", createdAt=" + createdAt + '}';
+	public static Logger getLogger() {
+		return logger;
 	}
 }
